@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Muhammad Khoirul Isya - Biodata</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="foto.jpg" alt="Muhammad Khoirul Isya" class="profile-picture">
+      <div class="personal-info">
+        <h1>MUHAMMAD KHOIRUL ISYA</h1>
+        <p><strong>Alamat:</strong> Ciputat – Tangerang Selatan</p>
+        <p><strong>No. Hp:</strong> (+62) 896-0807-8428</p>
+        <p><strong>Email:</strong> khoirulisya13@gmail.com</p>
+        <p><strong>Linkedln:</strong> Muhammad Khoirul Isya</p>
+      </div>
+    </header>
+    <div class="section">
+      <p>
+        1. Web Server:
+        Sebuah web server adalah perangkat keras atau perangkat lunak yang menyimpan dan menyajikan halaman-halaman web kepada pengguna melalui internet.
+        Ketika seseorang mengakses sebuah website, permintaan dikirimkan ke web server yang meng-host (menyimpan) website tersebut.
+        Web server bertugas mengirimkan halaman web yang diminta ke perangkat pengguna melalui protokol HTTP atau HTTPS.
+      </p>
+      <p>
+        2. Domain:
+        Domain adalah alamat unik yang digunakan untuk mengidentifikasi suatu website di internet. Contohnya, "www.nama-domain.com".
+        Domain menyediakan cara mudah diingat dan digunakan sebagai pengganti dari alamat IP numerik yang sebenarnya dari web server.
+        Pengguna dapat mengakses website dengan memasukkan domain ke dalam peramban web mereka.
+      </p>
+      <p>
+        3.Hosting:
+
+        Hosting adalah layanan yang menyediakan ruang dan infrastruktur server untuk menyimpan dan membuat website dapat diakses melalui internet.
+        Sebuah website harus di-host di server agar dapat diakses oleh pengguna. Hosting dapat dilakukan secara sendiri menggunakan server sendiri atau menggunakan layanan hosting dari penyedia hosting.
+        Layanan hosting menyediakan server, penyimpanan data, bandwidth, dan fitur lainnya yang diperlukan agar website dapat berjalan secara online.
+        Hubungan Antara Ketiganya:
+      </p>
+      <p>
+        Ketika seseorang ingin membuat website, mereka memerlukan layanan hosting untuk menyimpan konten dan data website tersebut.
+        Setelah website di-host, pemiliknya mendapatkan alamat IP untuk server yang menyimpan website tersebut.
+        Domain dibeli dan dihubungkan (disebut konfigurasi DNS) ke alamat IP server tempat website di-host.
+        Ketika seseorang mengakses website dengan memasukkan domain ke dalam peramban, permintaan dikirim ke DNS (Domain Name System) untuk mengonversi domain menjadi alamat IP server yang sesuai.
+        Setelah mendapatkan alamat IP, permintaan dikirim ke web server yang meng-host website tersebut.
+        Web server mengirimkan halaman web yang diminta kembali ke perangkat pengguna melalui internet.
+</p>    
+</div>
+
+    <div class="section">
+      <h2>01. PROFIL</h2>
+      <p>Saya adalah pribadi yang jujur, komunikatif, disiplin, dan bertanggung jawab. Saya mencari kesempatan untuk mengembangkan keterampilan saya dalam bekerja dan saya sangat senang mempelajari hal-hal baru.</p>
+    </div>
+
+    <div class="section">
+      <h2>02. PENGALAMAN KERJA</h2>
+      <ul>
+        <li><strong>Admin Online Shop di PT. Segar Abadi Bersama</strong></li>
+        <ul>
+          <li>1.	Mengelola E-Commerce Tokopedia & Shopee</li>
+          <li>2.	Maintenance E-Commerce</li>
+          <li>3.  Foto & Design produk</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>03. PENDIDIKAN</h2>
+      <ul>
+        <li><strong>SMK MUHAMMADIYAH 3 TANGERANG SELATAN</strong></li>
+        <ul>
+          <li>Teknik Komputer & Jaringan</li>
+          <li>Jul 2018 – Jun 2021</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>04. SKILLS</h2>
+      <ul>
+        <li>Microsoft Office (Microsoft Word, Microsoft Excel, Microsoft Power Point)</li>
+        <li>Cisco Packet Tracer</li>
+        <li>Winbox Mikrotik</li>
+        <li>Design Produk (Canva)</li>
+        <li>Mampu bekerja sebagai team</li>
+        <li>Bahasa: Indonesia</li>
+      </ul>
+    </div>
+
+    <button id="toggleExperience">Tampilkan/Sembunyikan Pengalaman Kerja</button>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleExperienceButton = document.getElementById('toggleExperience');
+      const toggleEducationButton = document.getElementById('toggleEducation');
+      const toggleSkillsButton = document.getElementById('toggleSkills');
+
+      const experienceSection = document.querySelector('.section:nth-child(4)');
+      const educationSection = document.querySelector('.section:nth-child(6)');
+      const skillsSection = document.querySelector('.section:nth-child(8)');
+
+      if (toggleExperienceButton && experienceSection) {
+        toggleExperienceButton.addEventListener('click', function () {
+          experienceSection.classList.toggle('hidden');
+        });
+      }
+
+      if (toggleEducationButton && educationSection) {
+        toggleEducationButton.addEventListener('click', function () {
+          educationSection.classList.toggle('hidden');
+        });
+      }
+
+      if (toggleSkillsButton && skillsSection) {
+        toggleSkillsButton.addEventListener('click', function () {
+          skillsSection.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
